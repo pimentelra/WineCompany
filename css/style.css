@@ -1,0 +1,153 @@
+* {
+	font-family: 'Merriweather';
+}
+#wrapper { text-align: center;}
+
+#nav {
+	margin: auto;
+	width: 960px;
+	background-color: #cc6666;
+	text-align: left;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: #660033;
+}
+
+ul li {
+	display: block;
+	position: relative;
+	float: left;
+	background: #660033;
+}
+
+/* Menu */
+/* hide the dropdowns */
+li ul { display: none; }
+
+ul li a {
+	display: block;
+	padding: 1em;
+	text-decoration: none;
+	white-space: nowrap;
+	color: #fff;
+}
+
+ul li a img { padding: 0; }
+
+ul li a:hover { background: #2c3e50; }
+
+/* display the dropdown */
+li:hover > ul {
+	display: block;
+	position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #660033; }
+
+li:hover li a:hover { background: #2c3e50; }
+
+.main-navigation li ul li { border-top: 0; }
+
+ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+ul:before,
+ul:after {
+	content: " ";
+	display: table;
+}
+
+ul:after { clear: both; }
+
+/* content and footer */
+.content { text-align: justify; padding: 60px;}
+
+.footer { text-align: right;}
+p.elegant::first-letter { font-size: 200%;}
+p.elegant {	text-indent: 10px;}
+p.description {	font-size: 80%;}
+
+
+
+.table{width:100%;display:table}
+
+.img{
+	width:300px;
+	height:300px;
+	display:table-cell;
+	padding-left: 10px;
+}
+
+.row { display: table-cell; vertical-align: top;}
+
+#container{ width: 100%;}
+#floated{
+    float: left;
+    width: 400px;
+    padding-right: 10px;
+}
+
+
+/* contact form page */
+.form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#contact { padding: 25px;}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #cccccc;
+  background: #FFFFFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #660033;
+  color: #FFFFFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #2c3e50;
+}
+
+#contact input:focus,
+#contact textarea:focus { 
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
